@@ -7,7 +7,6 @@ set -e
 
 echo "=== 🔧 Menjalankan sebagai root ==="
 if [ "$EUID" -ne 0 ]; then
-  echo "Script ini butuh akses root. Jalankan dengan: sudo bash install-windows11-cloudflare.sh"
   exit 1
 fi
 
